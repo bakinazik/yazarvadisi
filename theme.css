@@ -1,4 +1,4 @@
-/* Yazar Vadisi Theme Layout */
+/* GISCUS CUSTOM THEME - Yazır Vadisi Teması */
 :root {
   /* Light theme variables */
   --bg-light: #ffffff;
@@ -16,84 +16,163 @@
   --muted-dark: #9a9a9a;
   --accent-dark: #6b73ff;
   --border-dark: #333333;
-  
-  /* Default theme (dark) */
-  --bg: var(--bg-dark);
-  --card: var(--card-dark);
-  --text: var(--text-dark);
-  --muted: var(--muted-dark);
-  --accent: var(--accent-dark);
-  --radius: var(--radius-light);
-  --border: var(--border-dark);
 }
 
-/* Light theme class */
-body.light-theme {
-  --bg: var(--bg-light);
-  --card: var(--card-light);
-  --text: var(--text-light);
-  --muted: var(--muted-light);
-  --accent: var(--accent-light);
-  --border: var(--border-light);
+/* Light Theme */
+[data-theme="light"] {
+  --color-prettylights-syntax-comment: var(--muted-light);
+  --color-prettylights-syntax-entity: var(--accent-light);
+  --color-btn-text: var(--text-light);
+  --color-btn-bg: var(--card-light);
+  --color-btn-border: var(--border-light);
+  --color-btn-hover-bg: var(--bg-light);
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: var(--accent-light);
+  --color-btn-primary-hover-bg: var(--accent-light);
+  --color-fg-default: var(--text-light);
+  --color-fg-muted: var(--muted-light);
+  --color-canvas-default: var(--card-light);
+  --color-canvas-overlay: var(--bg-light);
+  --color-canvas-inset: var(--bg-light);
+  --color-border-default: var(--border-light);
+  --color-border-muted: var(--border-light);
+  --color-accent-fg: var(--accent-light);
+  --color-success-fg: #1a7f37;
 }
 
-
-main{
---color-prettylights-syntax-comment: var(--muted-dark);
---color-prettylights-syntax-constant: var(--accent);
---color-prettylights-syntax-entity: var(--accent);
---color-prettylights-syntax-entity-tag: var(--accent);
---color-prettylights-syntax-string: var(--accent-light);
---color-prettylights-syntax-variable: var(--accent-light);
---color-prettylights-syntax-string-regexp: var(--accent);
---color-prettylights-syntax-keyword: var(--accent-light);
---color-prettylights-syntax-brackethighlighter-unmatched: var(--accent-light);
---color-btn-text: var(--text);
---color-btn-bg: var(--card);
---color-btn-border: var(--border);
---color-btn-hover-bg: var(--accent);
---color-btn-hover-border: var(--border);
---color-btn-active-bg: var(--accent);
---color-btn-active-border: var(--border);
---color-btn-selected-bg: var(--card);
---color-btn-primary-text: var(--bg-light);
---color-btn-primary-bg: var(--accent);
---color-btn-primary-border: var(--border);
---color-btn-primary-disabled-text: var(--muted-light);
---color-btn-primary-disabled-bg: var(--border);
---color-fg-default: var(--text);
---color-fg-muted: var(--muted);
---color-canvas-default: var(--bg);
---color-canvas-overlay: var(--card);
---color-canvas-inset: var(--bg);
---color-canvas-subtle: var(--card);
---color-border-default: var(--border);
---color-border-muted: var(--border-dark);
---color-neutral-muted: var(--border);
---color-accent-fg: var(--accent-light);
---color-accent-emphasis: var(--accent);
---color-success-fg: var(--accent);
---color-attention-fg: var(--accent-light);
---color-danger-fg: var(--accent-light);
---color-danger-muted: var(--muted);
---color-danger-subtle: var(--card);
---color-social-reaction-bg-hover: var(--card);
---color-social-reaction-bg-reacted-hover: var(--accent);
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-prettylights-syntax-comment: var(--muted-dark);
+  --color-prettylights-syntax-entity: var(--accent-dark);
+  --color-btn-text: var(--text-dark);
+  --color-btn-bg: var(--card-dark);
+  --color-btn-border: var(--border-dark);
+  --color-btn-hover-bg: var(--bg-dark);
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: var(--accent-dark);
+  --color-btn-primary-hover-bg: var(--accent-dark);
+  --color-fg-default: var(--text-dark);
+  --color-fg-muted: var(--muted-dark);
+  --color-canvas-default: var(--card-dark);
+  --color-canvas-overlay: var(--bg-dark);
+  --color-canvas-inset: var(--bg-dark);
+  --color-border-default: var(--border-dark);
+  --color-border-muted: var(--border-dark);
+  --color-accent-fg: var(--accent-dark);
+  --color-success-fg: #3fb950;
 }
 
-main .pagination-loader-container{
-background: var(--bg);
+/* Base Styles */
+.giscus, .giscus-frame {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  border-radius: var(--radius-light);
 }
 
-.gsc-reactions-count{display:none}
-.gsc-timeline{flex-direction:column-reverse}
-.gsc-header{padding-bottom:1rem}
-.gsc-comments>.gsc-header{order:1}
-.gsc-comments>.gsc-comment-box{margin-bottom:1rem;order:2}
-.gsc-comments>.gsc-timeline{order:3}
-.gsc-homepage-bg{background:var(--bg)}
-
-main .gsc-loading-image{
-background: var(--card);
+.giscus-frame {
+  color: var(--color-fg-default);
+  background: var(--color-canvas-default);
 }
 
+/* Butonlar */
+.giscus-frame .btn {
+  background: var(--color-btn-bg);
+  border: 1px solid var(--color-btn-border);
+  color: var(--color-btn-text);
+  border-radius: var(--radius-light);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.giscus-frame .btn:hover {
+  background: var(--color-btn-hover-bg);
+  border-color: var(--color-accent-fg);
+}
+
+.giscus-frame .btn-primary {
+  background: var(--color-btn-primary-bg);
+  border-color: var(--color-btn-primary-bg);
+  color: var(--color-btn-primary-text);
+}
+
+.giscus-frame .btn-primary:hover {
+  background: var(--color-btn-primary-hover-bg);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Input Alanları */
+.giscus-frame input, 
+.giscus-frame textarea {
+  background: var(--color-canvas-inset);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-fg-default);
+  border-radius: var(--radius-light);
+  font-family: inherit;
+  padding: 10px 12px;
+}
+
+.giscus-frame input:focus, 
+.giscus-frame textarea:focus {
+  border-color: var(--color-accent-fg);
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-fg) 20%, transparent);
+}
+
+/* Yorum Kartları */
+.giscus-frame .gsc-comment, 
+.giscus-frame .gsc-timeline {
+  background: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-fg-default);
+  border-radius: var(--radius-light);
+  margin-bottom: 16px;
+}
+
+/* Başlık ve Metinler */
+.giscus-frame .gsc-header,
+.giscus-frame .gsc-author,
+.giscus-frame .gsc-comment-content {
+  color: var(--color-fg-default);
+  font-family: inherit;
+}
+
+/* Linkler */
+.giscus-frame a {
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.giscus-frame a:hover {
+  color: var(--color-accent-fg);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Reaksiyon Butonları */
+.giscus-frame .gsc-reactions,
+.giscus-frame .gsc-reaction {
+  background: var(--color-canvas-overlay);
+  border-color: var(--color-border-default);
+  color: var(--color-fg-default);
+  border-radius: var(--radius-light);
+}
+
+/* Markdown İçeriği */
+.giscus-frame .markdown {
+  color: var(--color-fg-default);
+  font-family: inherit;
+}
+
+.giscus-frame .markdown code {
+  background: var(--color-canvas-inset);
+  color: var(--color-fg-default);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Loading State */
+.giscus-frame .gsc-loading {
+  color: var(--color-fg-muted);
+}

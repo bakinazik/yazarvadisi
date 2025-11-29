@@ -1,178 +1,241 @@
 /* GISCUS CUSTOM THEME - Yazır Vadisi Teması */
-:root {
-  /* Light theme variables */
-  --bg-light: #ffffff;
-  --card-light: #f5f5f5;
-  --text-light: #111111;
-  --muted-light: #666666;
-  --accent-light: #4f5bff;
-  --radius-light: 8px;
-  --border-light: #e5e5e5;
-  
-  /* Dark theme variables */
-  --bg-dark: #1a1a1a;
-  --card-dark: #222222;
-  --text-dark: #e5e5e5;
-  --muted-dark: #9a9a9a;
-  --accent-dark: #6b73ff;
-  --border-dark: #333333;
+.giscus, .giscus-frame {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 /* Light Theme */
-[data-theme="light"] {
-  --color-prettylights-syntax-comment: var(--muted-light);
-  --color-prettylights-syntax-entity: var(--accent-light);
-  --color-btn-text: var(--text-light);
-  --color-btn-bg: var(--card-light);
-  --color-btn-border: var(--border-light);
-  --color-btn-hover-bg: var(--bg-light);
-  --color-btn-primary-text: #ffffff;
-  --color-btn-primary-bg: var(--accent-light);
-  --color-btn-primary-hover-bg: var(--accent-light);
-  --color-fg-default: var(--text-light);
-  --color-fg-muted: var(--muted-light);
-  --color-canvas-default: var(--card-light);
-  --color-canvas-overlay: var(--bg-light);
-  --color-canvas-inset: var(--bg-light);
-  --color-border-default: var(--border-light);
-  --color-border-muted: var(--border-light);
-  --color-accent-fg: var(--accent-light);
-  --color-success-fg: #1a7f37;
+[data-theme="light"],
+[data-color-mode="light"] {
+  --color-prettylights-syntax-comment: #666666 !important;
+  --color-prettylights-syntax-entity: #4f5bff !important;
+  --color-prettylights-syntax-constant: #0550ae !important;
+  --color-prettylights-syntax-keyword: #cf222e !important;
+  --color-prettylights-syntax-string: #0a3069 !important;
+  
+  --color-btn-text: #111111 !important;
+  --color-btn-bg: #f5f5f5 !important;
+  --color-btn-border: #e5e5e5 !important;
+  --color-btn-hover-bg: #ffffff !important;
+  
+  --color-btn-primary-text: #ffffff !important;
+  --color-btn-primary-bg: #4f5bff !important;
+  --color-btn-primary-border: #4f5bff !important;
+  --color-btn-primary-hover-bg: #3a46e0 !important;
+  
+  --color-fg-default: #111111 !important;
+  --color-fg-muted: #666666 !important;
+  --color-fg-subtle: #666666 !important;
+  
+  --color-canvas-default: #f5f5f5 !important;
+  --color-canvas-overlay: #ffffff !important;
+  --color-canvas-inset: #ffffff !important;
+  --color-canvas-subtle: #f9f9f9 !important;
+  
+  --color-border-default: #e5e5e5 !important;
+  --color-border-muted: #e5e5e5 !important;
+  
+  --color-accent-fg: #4f5bff !important;
+  --color-accent-emphasis: #4f5bff !important;
+  --color-success-fg: #1a7f37 !important;
+  
+  --color-attention-subtle: #fff8c5 !important;
+  --color-danger-subtle: #ffebe9 !important;
 }
 
 /* Dark Theme */
-[data-theme="dark"] {
-  --color-prettylights-syntax-comment: var(--muted-dark);
-  --color-prettylights-syntax-entity: var(--accent-dark);
-  --color-btn-text: var(--text-dark);
-  --color-btn-bg: var(--card-dark);
-  --color-btn-border: var(--border-dark);
-  --color-btn-hover-bg: var(--bg-dark);
-  --color-btn-primary-text: #ffffff;
-  --color-btn-primary-bg: var(--accent-dark);
-  --color-btn-primary-hover-bg: var(--accent-dark);
-  --color-fg-default: var(--text-dark);
-  --color-fg-muted: var(--muted-dark);
-  --color-canvas-default: var(--card-dark);
-  --color-canvas-overlay: var(--bg-dark);
-  --color-canvas-inset: var(--bg-dark);
-  --color-border-default: var(--border-dark);
-  --color-border-muted: var(--border-dark);
-  --color-accent-fg: var(--accent-dark);
-  --color-success-fg: #3fb950;
+[data-theme="dark"],
+[data-color-mode="dark"] {
+  --color-prettylights-syntax-comment: #9a9a9a !important;
+  --color-prettylights-syntax-entity: #6b73ff !important;
+  --color-prettylights-syntax-constant: #79c0ff !important;
+  --color-prettylights-syntax-keyword: #ff7b72 !important;
+  --color-prettylights-syntax-string: #a5d6ff !important;
+  
+  --color-btn-text: #e5e5e5 !important;
+  --color-btn-bg: #222222 !important;
+  --color-btn-border: #333333 !important;
+  --color-btn-hover-bg: #1a1a1a !important;
+  
+  --color-btn-primary-text: #ffffff !important;
+  --color-btn-primary-bg: #6b73ff !important;
+  --color-btn-primary-border: #6b73ff !important;
+  --color-btn-primary-hover-bg: #5a62e0 !important;
+  
+  --color-fg-default: #e5e5e5 !important;
+  --color-fg-muted: #9a9a9a !important;
+  --color-fg-subtle: #9a9a9a !important;
+  
+  --color-canvas-default: #1a1a1a !important;
+  --color-canvas-overlay: #222222 !important;
+  --color-canvas-inset: #222222 !important;
+  --color-canvas-subtle: #2a2a2a !important;
+  
+  --color-border-default: #333333 !important;
+  --color-border-muted: #333333 !important;
+  
+  --color-accent-fg: #6b73ff !important;
+  --color-accent-emphasis: #6b73ff !important;
+  --color-success-fg: #3fb950 !important;
+  
+  --color-attention-subtle: #3b2300 !important;
+  --color-danger-subtle: #4c1a1a !important;
 }
 
-/* Base Styles */
-.giscus, .giscus-frame {
-  width: 100%;
-  border: none;
-  background: transparent;
-  font-family: 'Inter', sans-serif;
-  border-radius: var(--radius-light);
-}
-
+/* Giscus Frame Stilleri */
 .giscus-frame {
-  color: var(--color-fg-default);
-  background: var(--color-canvas-default);
+  color: var(--color-fg-default) !important;
+  background: var(--color-canvas-default) !important;
+  border-radius: 8px !important;
+  min-height: 200px;
 }
 
 /* Butonlar */
 .giscus-frame .btn {
-  background: var(--color-btn-bg);
-  border: 1px solid var(--color-btn-border);
-  color: var(--color-btn-text);
-  border-radius: var(--radius-light);
-  transition: all 0.2s ease;
-  font-family: inherit;
+  background: var(--color-btn-bg) !important;
+  border: 1px solid var(--color-btn-border) !important;
+  color: var(--color-btn-text) !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
 }
 
 .giscus-frame .btn:hover {
-  background: var(--color-btn-hover-bg);
-  border-color: var(--color-accent-fg);
+  background: var(--color-btn-hover-bg) !important;
+  border-color: var(--color-btn-border) !important;
+  transform: translateY(-1px) !important;
 }
 
 .giscus-frame .btn-primary {
-  background: var(--color-btn-primary-bg);
-  border-color: var(--color-btn-primary-bg);
-  color: var(--color-btn-primary-text);
+  background: var(--color-btn-primary-bg) !important;
+  border-color: var(--color-btn-primary-border) !important;
+  color: var(--color-btn-primary-text) !important;
 }
 
 .giscus-frame .btn-primary:hover {
-  background: var(--color-btn-primary-hover-bg);
-  opacity: 0.9;
-  transform: translateY(-1px);
+  background: var(--color-btn-primary-hover-bg) !important;
+  border-color: var(--color-btn-primary-hover-bg) !important;
 }
 
 /* Input Alanları */
 .giscus-frame input, 
 .giscus-frame textarea {
-  background: var(--color-canvas-inset);
-  border: 1px solid var(--color-border-default);
-  color: var(--color-fg-default);
-  border-radius: var(--radius-light);
-  font-family: inherit;
-  padding: 10px 12px;
+  background: var(--color-canvas-inset) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
 }
 
 .giscus-frame input:focus, 
 .giscus-frame textarea:focus {
-  border-color: var(--color-accent-fg);
-  outline: none;
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-fg) 20%, transparent);
+  border-color: var(--color-accent-fg) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-fg) 20%, transparent) !important;
 }
 
 /* Yorum Kartları */
 .giscus-frame .gsc-comment, 
 .giscus-frame .gsc-timeline {
-  background: var(--color-canvas-default);
-  border: 1px solid var(--color-border-default);
-  color: var(--color-fg-default);
-  border-radius: var(--radius-light);
-  margin-bottom: 16px;
+  background: var(--color-canvas-default) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  padding: 16px !important;
 }
 
 /* Başlık ve Metinler */
 .giscus-frame .gsc-header,
 .giscus-frame .gsc-author,
 .giscus-frame .gsc-comment-content {
-  color: var(--color-fg-default);
-  font-family: inherit;
+  color: var(--color-fg-default) !important;
+}
+
+.giscus-frame .gsc-header {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
 }
 
 /* Linkler */
 .giscus-frame a {
-  color: var(--color-accent-fg);
-  text-decoration: none;
+  color: var(--color-accent-fg) !important;
+  text-decoration: none !important;
 }
 
 .giscus-frame a:hover {
-  color: var(--color-accent-fg);
-  opacity: 0.8;
-  text-decoration: underline;
+  color: var(--color-accent-fg) !important;
+  text-decoration: underline !important;
 }
 
 /* Reaksiyon Butonları */
 .giscus-frame .gsc-reactions,
 .giscus-frame .gsc-reaction {
-  background: var(--color-canvas-overlay);
-  border-color: var(--color-border-default);
-  color: var(--color-fg-default);
-  border-radius: var(--radius-light);
+  background: var(--color-canvas-overlay) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+}
+
+.giscus-frame .gsc-reaction:hover {
+  background: var(--color-btn-hover-bg) !important;
+  border-color: var(--color-accent-fg) !important;
 }
 
 /* Markdown İçeriği */
 .giscus-frame .markdown {
-  color: var(--color-fg-default);
-  font-family: inherit;
+  color: var(--color-fg-default) !important;
+  line-height: 1.6 !important;
 }
 
 .giscus-frame .markdown code {
-  background: var(--color-canvas-inset);
-  color: var(--color-fg-default);
-  border: 1px solid var(--color-border-default);
+  background: var(--color-canvas-subtle) !important;
+  color: var(--color-fg-default) !important;
+  border: 1px solid var(--color-border-muted) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  font-size: 0.85em !important;
+}
+
+.giscus-frame .markdown pre {
+  background: var(--color-canvas-subtle) !important;
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
 }
 
 /* Loading State */
 .giscus-frame .gsc-loading {
-  color: var(--color-fg-muted);
+  color: var(--color-fg-muted) !important;
+  font-style: italic !important;
+}
+
+/* Discussion Header */
+.giscus-frame .gsc-header {
+  border-bottom: 1px solid var(--color-border-default) !important;
+  padding-bottom: 12px !important;
+}
+
+/* Comment Meta */
+.giscus-frame .gsc-comment-meta {
+  color: var(--color-fg-muted) !important;
+  font-size: 0.875em !important;
+}
+
+/* Timestamp */
+.giscus-frame .gsc-timestamp {
+  color: var(--color-fg-subtle) !important;
+}
+
+/* Login Prompt */
+.giscus-frame .gsc-login {
+  background: var(--color-canvas-overlay) !important;
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
 }

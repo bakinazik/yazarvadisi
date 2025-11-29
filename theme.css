@@ -1,4 +1,42 @@
 /* Yazar Vadisi Theme Layout */
+:root {
+  /* Light theme variables */
+  --bg-light: #ffffff;
+  --card-light: #f5f5f5;
+  --text-light: #111111;
+  --muted-light: #666666;
+  --accent-light: #4f5bff;
+  --radius-light: 8px;
+  --border-light: #e5e5e5;
+  
+  /* Dark theme variables */
+  --bg-dark: #1a1a1a;
+  --card-dark: #222222;
+  --text-dark: #e5e5e5;
+  --muted-dark: #9a9a9a;
+  --accent-dark: #6b73ff;
+  --border-dark: #333333;
+  
+  /* Default theme (dark) */
+  --bg: var(--bg-dark);
+  --card: var(--card-dark);
+  --text: var(--text-dark);
+  --muted: var(--muted-dark);
+  --accent: var(--accent-dark);
+  --radius: var(--radius-light);
+  --border: var(--border-dark);
+}
+
+/* Light theme class */
+body.light-theme {
+  --bg: var(--bg-light);
+  --card: var(--card-light);
+  --text: var(--text-light);
+  --muted: var(--muted-light);
+  --accent: var(--accent-light);
+  --border: var(--border-light);
+}
+
 
 main{
 --color-prettylights-syntax-comment: var(--muted-dark);
@@ -58,3 +96,4 @@ background: var(--bg);
 main .gsc-loading-image{
 background: var(--card);
 }
+

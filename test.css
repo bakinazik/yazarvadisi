@@ -1,0 +1,185 @@
+/* Light Theme */
+[data-theme="light"],
+[data-color-mode="light"] {
+  --color-prettylights-syntax-comment: #666666;
+  --color-prettylights-syntax-constant: #4f5bff;
+  --color-prettylights-syntax-entity: #4f5bff;
+  --color-prettylights-syntax-storage-modifier-import: #111111;
+  --color-prettylights-syntax-entity-tag: #1a7f37;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f5f5f5;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f5f5f5;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #1a7f37;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #4f5bff;
+  --color-prettylights-syntax-markup-italic: #111111;
+  --color-prettylights-syntax-markup-bold: #111111;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #1a7f37;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #e5e5e5;
+  --color-prettylights-syntax-markup-ignored-bg: #4f5bff;
+  --color-prettylights-syntax-meta-diff-range: #4f5bff;
+  --color-prettylights-syntax-brackethighlighter-angle: #666666;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #9a9a9a;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  
+  --color-btn-text: #111111;
+  --color-btn-bg: #f5f5f5;
+  --color-btn-border: #e5e5e5;
+  --color-btn-shadow: 0 1px 0 rgba(17,17,17,0.1);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  --color-btn-hover-bg: #ffffff;
+  --color-btn-hover-border: #e5e5e5;
+  --color-btn-active-bg: #ebebeb;
+  --color-btn-active-border: #e5e5e5;
+  --color-btn-selected-bg: #eeeeee;
+  
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #4f5bff;
+  --color-btn-primary-border: #4f5bff;
+  --color-btn-primary-shadow: 0 1px 0 rgba(17,17,17,0.1);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  --color-btn-primary-hover-bg: #3a46e0;
+  --color-btn-primary-hover-border: #3a46e0;
+  --color-btn-primary-selected-bg: #2f3ac7;
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+  --color-btn-primary-disabled-text: rgba(255,255,255,0.8);
+  --color-btn-primary-disabled-bg: #8a92ff;
+  --color-btn-primary-disabled-border: #8a92ff;
+  
+  --color-action-list-item-default-hover-bg: rgba(229,229,229,0.5);
+  --color-segmented-control-bg: #e5e5e5;
+  --color-segmented-control-button-bg: #ffffff;
+  --color-segmented-control-button-selected-border: #9a9a9a;
+  
+  --color-fg-default: #111111;
+  --color-fg-muted: #666666;
+  --color-fg-subtle: #666666;
+  --color-canvas-default: #f5f5f5;
+  --color-canvas-overlay: #ffffff;
+  --color-canvas-inset: #ffffff;
+  --color-canvas-subtle: #f9f9f9;
+  --color-border-default: #e5e5e5;
+  --color-border-muted: #e5e5e5;
+  --color-neutral-muted: rgba(154,154,154,0.2);
+  
+  --color-accent-fg: #4f5bff;
+  --color-accent-emphasis: #4f5bff;
+  --color-accent-muted: rgba(79,91,255,0.4);
+  --color-accent-subtle: #e8eaff;
+  --color-success-fg: #1a7f37;
+  --color-attention-fg: #9a6700;
+  --color-attention-muted: rgba(212,167,44,0.4);
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-danger-muted: rgba(255,129,130,0.4);
+  --color-danger-subtle: #ffebe9;
+  
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(229,229,229,0.2);
+  --color-scale-gray-1: #e5e5e5;
+  --color-scale-blue-1: #d0d5ff;
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}
+
+/* Dark Theme */
+[data-theme="dark"],
+[data-color-mode="dark"] {
+  --color-prettylights-syntax-comment: #9a9a9a;
+  --color-prettylights-syntax-constant: #6b73ff;
+  --color-prettylights-syntax-entity: #6b73ff;
+  --color-prettylights-syntax-storage-modifier-import: #e5e5e5;
+  --color-prettylights-syntax-entity-tag: #3fb950;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6b6b;
+  --color-prettylights-syntax-invalid-illegal-text: #222222;
+  --color-prettylights-syntax-invalid-illegal-bg: #ff6b6b;
+  --color-prettylights-syntax-carriage-return-text: #222222;
+  --color-prettylights-syntax-carriage-return-bg: #ff7b72;
+  --color-prettylights-syntax-string-regexp: #3fb950;
+  --color-prettylights-syntax-markup-list: #ffd8b5;
+  --color-prettylights-syntax-markup-heading: #6b73ff;
+  --color-prettylights-syntax-markup-italic: #e5e5e5;
+  --color-prettylights-syntax-markup-bold: #e5e5e5;
+  --color-prettylights-syntax-markup-deleted-text: #ff6b6b;
+  --color-prettylights-syntax-markup-deleted-bg: #4c1a1a;
+  --color-prettylights-syntax-markup-inserted-text: #3fb950;
+  --color-prettylights-syntax-markup-inserted-bg: #1a3a1a;
+  --color-prettylights-syntax-markup-changed-text: #ffa657;
+  --color-prettylights-syntax-markup-changed-bg: #3b2300;
+  --color-prettylights-syntax-markup-ignored-text: #333333;
+  --color-prettylights-syntax-markup-ignored-bg: #6b73ff;
+  --color-prettylights-syntax-meta-diff-range: #6b73ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #9a9a9a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #666666;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  
+  --color-btn-text: #e5e5e5;
+  --color-btn-bg: #222222;
+  --color-btn-border: #333333;
+  --color-btn-shadow: 0 1px 0 rgba(229,229,229,0.1);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+  --color-btn-hover-bg: #1a1a1a;
+  --color-btn-hover-border: #333333;
+  --color-btn-active-bg: #2a2a2a;
+  --color-btn-active-border: #333333;
+  --color-btn-selected-bg: #2a2a2a;
+  
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #6b73ff;
+  --color-btn-primary-border: #6b73ff;
+  --color-btn-primary-shadow: 0 1px 0 rgba(229,229,229,0.1);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+  --color-btn-primary-hover-bg: #5a62e0;
+  --color-btn-primary-hover-border: #5a62e0;
+  --color-btn-primary-selected-bg: #4f57c7;
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0,0,0,0.3);
+  --color-btn-primary-disabled-text: rgba(255,255,255,0.6);
+  --color-btn-primary-disabled-bg: #8a92ff;
+  --color-btn-primary-disabled-border: #8a92ff;
+  
+  --color-action-list-item-default-hover-bg: rgba(51,51,51,0.5);
+  --color-segmented-control-bg: #333333;
+  --color-segmented-control-button-bg: #222222;
+  --color-segmented-control-button-selected-border: #666666;
+  
+  --color-fg-default: #e5e5e5;
+  --color-fg-muted: #9a9a9a;
+  --color-fg-subtle: #9a9a9a;
+  --color-canvas-default: #1a1a1a;
+  --color-canvas-overlay: #222222;
+  --color-canvas-inset: #222222;
+  --color-canvas-subtle: #2a2a2a;
+  --color-border-default: #333333;
+  --color-border-muted: #333333;
+  --color-neutral-muted: rgba(154,154,154,0.2);
+  
+  --color-accent-fg: #6b73ff;
+  --color-accent-emphasis: #6b73ff;
+  --color-accent-muted: rgba(107,115,255,0.4);
+  --color-accent-subtle: #2a2a4a;
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d4a72c;
+  --color-attention-muted: rgba(212,167,44,0.4);
+  --color-attention-subtle: #3b2300;
+  --color-danger-fg: #ff6b6b;
+  --color-danger-muted: rgba(255,107,107,0.4);
+  --color-danger-subtle: #4c1a1a;
+  
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(51,51,51,0.2);
+  --color-scale-gray-1: #333333;
+  --color-scale-blue-1: #2a2a4a;
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}

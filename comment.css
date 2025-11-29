@@ -1,0 +1,241 @@
+/* GISCUS CUSTOM THEME - Yazır Vadisi Teması */
+.giscus, .giscus-frame {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Light Theme */
+[data-theme="light"],
+[data-color-mode="light"] {
+  --color-prettylights-syntax-comment: #666666 !important;
+  --color-prettylights-syntax-entity: #4f5bff !important;
+  --color-prettylights-syntax-constant: #0550ae !important;
+  --color-prettylights-syntax-keyword: #cf222e !important;
+  --color-prettylights-syntax-string: #0a3069 !important;
+  
+  --color-btn-text: #111111 !important;
+  --color-btn-bg: #f5f5f5 !important;
+  --color-btn-border: #e5e5e5 !important;
+  --color-btn-hover-bg: #ffffff !important;
+  
+  --color-btn-primary-text: #ffffff !important;
+  --color-btn-primary-bg: #4f5bff !important;
+  --color-btn-primary-border: #4f5bff !important;
+  --color-btn-primary-hover-bg: #3a46e0 !important;
+  
+  --color-fg-default: #111111 !important;
+  --color-fg-muted: #666666 !important;
+  --color-fg-subtle: #666666 !important;
+  
+  --color-canvas-default: #f5f5f5 !important;
+  --color-canvas-overlay: #ffffff !important;
+  --color-canvas-inset: #ffffff !important;
+  --color-canvas-subtle: #f9f9f9 !important;
+  
+  --color-border-default: #e5e5e5 !important;
+  --color-border-muted: #e5e5e5 !important;
+  
+  --color-accent-fg: #4f5bff !important;
+  --color-accent-emphasis: #4f5bff !important;
+  --color-success-fg: #1a7f37 !important;
+  
+  --color-attention-subtle: #fff8c5 !important;
+  --color-danger-subtle: #ffebe9 !important;
+}
+
+/* Dark Theme */
+[data-theme="dark"],
+[data-color-mode="dark"] {
+  --color-prettylights-syntax-comment: #9a9a9a !important;
+  --color-prettylights-syntax-entity: #6b73ff !important;
+  --color-prettylights-syntax-constant: #79c0ff !important;
+  --color-prettylights-syntax-keyword: #ff7b72 !important;
+  --color-prettylights-syntax-string: #a5d6ff !important;
+  
+  --color-btn-text: #e5e5e5 !important;
+  --color-btn-bg: #222222 !important;
+  --color-btn-border: #333333 !important;
+  --color-btn-hover-bg: #1a1a1a !important;
+  
+  --color-btn-primary-text: #ffffff !important;
+  --color-btn-primary-bg: #6b73ff !important;
+  --color-btn-primary-border: #6b73ff !important;
+  --color-btn-primary-hover-bg: #5a62e0 !important;
+  
+  --color-fg-default: #e5e5e5 !important;
+  --color-fg-muted: #9a9a9a !important;
+  --color-fg-subtle: #9a9a9a !important;
+  
+  --color-canvas-default: #1a1a1a !important;
+  --color-canvas-overlay: #222222 !important;
+  --color-canvas-inset: #222222 !important;
+  --color-canvas-subtle: #2a2a2a !important;
+  
+  --color-border-default: #333333 !important;
+  --color-border-muted: #333333 !important;
+  
+  --color-accent-fg: #6b73ff !important;
+  --color-accent-emphasis: #6b73ff !important;
+  --color-success-fg: #3fb950 !important;
+  
+  --color-attention-subtle: #3b2300 !important;
+  --color-danger-subtle: #4c1a1a !important;
+}
+
+/* Giscus Frame Stilleri */
+.giscus-frame {
+  color: var(--color-fg-default) !important;
+  background: var(--color-canvas-default) !important;
+  border-radius: 8px !important;
+  min-height: 200px;
+}
+
+/* Butonlar */
+.giscus-frame .btn {
+  background: var(--color-btn-bg) !important;
+  border: 1px solid var(--color-btn-border) !important;
+  color: var(--color-btn-text) !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+}
+
+.giscus-frame .btn:hover {
+  background: var(--color-btn-hover-bg) !important;
+  border-color: var(--color-btn-border) !important;
+  transform: translateY(-1px) !important;
+}
+
+.giscus-frame .btn-primary {
+  background: var(--color-btn-primary-bg) !important;
+  border-color: var(--color-btn-primary-border) !important;
+  color: var(--color-btn-primary-text) !important;
+}
+
+.giscus-frame .btn-primary:hover {
+  background: var(--color-btn-primary-hover-bg) !important;
+  border-color: var(--color-btn-primary-hover-bg) !important;
+}
+
+/* Input Alanları */
+.giscus-frame input, 
+.giscus-frame textarea {
+  background: var(--color-canvas-inset) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+}
+
+.giscus-frame input:focus, 
+.giscus-frame textarea:focus {
+  border-color: var(--color-accent-fg) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-fg) 20%, transparent) !important;
+}
+
+/* Yorum Kartları */
+.giscus-frame .gsc-comment, 
+.giscus-frame .gsc-timeline {
+  background: var(--color-canvas-default) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  padding: 16px !important;
+}
+
+/* Başlık ve Metinler */
+.giscus-frame .gsc-header,
+.giscus-frame .gsc-author,
+.giscus-frame .gsc-comment-content {
+  color: var(--color-fg-default) !important;
+}
+
+.giscus-frame .gsc-header {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Linkler */
+.giscus-frame a {
+  color: var(--color-accent-fg) !important;
+  text-decoration: none !important;
+}
+
+.giscus-frame a:hover {
+  color: var(--color-accent-fg) !important;
+  text-decoration: underline !important;
+}
+
+/* Reaksiyon Butonları */
+.giscus-frame .gsc-reactions,
+.giscus-frame .gsc-reaction {
+  background: var(--color-canvas-overlay) !important;
+  border: 1px solid var(--color-border-default) !important;
+  color: var(--color-fg-default) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+}
+
+.giscus-frame .gsc-reaction:hover {
+  background: var(--color-btn-hover-bg) !important;
+  border-color: var(--color-accent-fg) !important;
+}
+
+/* Markdown İçeriği */
+.giscus-frame .markdown {
+  color: var(--color-fg-default) !important;
+  line-height: 1.6 !important;
+}
+
+.giscus-frame .markdown code {
+  background: var(--color-canvas-subtle) !important;
+  color: var(--color-fg-default) !important;
+  border: 1px solid var(--color-border-muted) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  font-size: 0.85em !important;
+}
+
+.giscus-frame .markdown pre {
+  background: var(--color-canvas-subtle) !important;
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
+}
+
+/* Loading State */
+.giscus-frame .gsc-loading {
+  color: var(--color-fg-muted) !important;
+  font-style: italic !important;
+}
+
+/* Discussion Header */
+.giscus-frame .gsc-header {
+  border-bottom: 1px solid var(--color-border-default) !important;
+  padding-bottom: 12px !important;
+}
+
+/* Comment Meta */
+.giscus-frame .gsc-comment-meta {
+  color: var(--color-fg-muted) !important;
+  font-size: 0.875em !important;
+}
+
+/* Timestamp */
+.giscus-frame .gsc-timestamp {
+  color: var(--color-fg-subtle) !important;
+}
+
+/* Login Prompt */
+.giscus-frame .gsc-login {
+  background: var(--color-canvas-overlay) !important;
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+}

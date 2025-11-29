@@ -1,0 +1,60 @@
+/* Yazar Vadisi Theme Layout */
+
+main{
+--color-prettylights-syntax-comment: var(--muted-dark);
+--color-prettylights-syntax-constant: var(--accent);
+--color-prettylights-syntax-entity: var(--accent);
+--color-prettylights-syntax-entity-tag: var(--accent);
+--color-prettylights-syntax-string: var(--accent-light);
+--color-prettylights-syntax-variable: var(--accent-light);
+--color-prettylights-syntax-string-regexp: var(--accent);
+--color-prettylights-syntax-keyword: var(--accent-light);
+--color-prettylights-syntax-brackethighlighter-unmatched: var(--accent-light);
+--color-btn-text: var(--text);
+--color-btn-bg: var(--card);
+--color-btn-border: var(--border);
+--color-btn-hover-bg: var(--accent);
+--color-btn-hover-border: var(--border);
+--color-btn-active-bg: var(--accent);
+--color-btn-active-border: var(--border);
+--color-btn-selected-bg: var(--card);
+--color-btn-primary-text: var(--bg-light);
+--color-btn-primary-bg: var(--accent);
+--color-btn-primary-border: var(--border);
+--color-btn-primary-disabled-text: var(--muted-light);
+--color-btn-primary-disabled-bg: var(--border);
+--color-fg-default: var(--text);
+--color-fg-muted: var(--muted);
+--color-canvas-default: var(--bg);
+--color-canvas-overlay: var(--card);
+--color-canvas-inset: var(--bg);
+--color-canvas-subtle: var(--card);
+--color-border-default: var(--border);
+--color-border-muted: var(--border-dark);
+--color-neutral-muted: var(--border);
+--color-accent-fg: var(--accent-light);
+--color-accent-emphasis: var(--accent);
+--color-success-fg: var(--accent);
+--color-attention-fg: var(--accent-light);
+--color-danger-fg: var(--accent-light);
+--color-danger-muted: var(--muted);
+--color-danger-subtle: var(--card);
+--color-social-reaction-bg-hover: var(--card);
+--color-social-reaction-bg-reacted-hover: var(--accent);
+}
+
+main .pagination-loader-container{
+background: var(--bg);
+}
+
+.gsc-reactions-count{display:none}
+.gsc-timeline{flex-direction:column-reverse}
+.gsc-header{padding-bottom:1rem}
+.gsc-comments>.gsc-header{order:1}
+.gsc-comments>.gsc-comment-box{margin-bottom:1rem;order:2}
+.gsc-comments>.gsc-timeline{order:3}
+.gsc-homepage-bg{background:var(--bg)}
+
+main .gsc-loading-image{
+background: var(--card);
+}
